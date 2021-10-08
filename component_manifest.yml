@@ -3,7 +3,7 @@
 Name: StaticTimeSeriesResourceForecaster
 Type: platform
 Description: "Static Time Series Resource Forecaster component for the SimCes Platform"
-DockerImage: procem.ain.rd.tut.fi/simces/static_time_series_resource_forecaster
+DockerImage: ghcr.io/simcesplatform/static_time_series_resource_forecaster
 Attributes:
     ResourceForecastComponentIds:
         Environment: RESOURCE_FORECAST_COMPONENT_IDS
