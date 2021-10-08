@@ -1,0 +1,36 @@
+# The component manifest file for the Static Time Series Resource Forecaster component
+
+Name: StaticTimeSeriesResourceForecaster
+Type: platform
+Description: "Static Time Series Resource Forecaster component for the SimCes Platform"
+DockerImage: procem.ain.rd.tut.fi/simces/static_time_series_resource_forecaster
+Attributes:
+    ResourceForecastComponentIds:
+        Environment: RESOURCE_FORECAST_COMPONENT_IDS
+        Optional: false
+    ResourceTypes:
+        Environment: RESOURCE_TYPES
+        Optional: false
+    ResourceForecastStateCsvFolder:
+        Environment: RESOURCE_FORECAST_STATE_CSV_FOLDER
+        Optional: false
+    ResourceFileDelimiter:
+        Environment: RESOURCE_STATE_CSV_DELIMITER
+        Optional: true
+        Default: ","
+    ResourceType:
+        Environment: RESOURCE_TYPE
+        Optional: true
+        Default: "ResourceForecaster"
+    ResourceForecastTopic:
+        Environment: RESOURCE_FORECAST_TOPIC
+        Optional: true
+        Default: "ResourceForecastState"
+    ForecastHorizon:
+        Environment: FORECAST_HORIZON
+        Optional: true
+        Default: "PT36H"
+    UnitOfMeasure:
+        Environment: UNIT_OF_MEASURE
+        Optional: true
+        Default: "kW"
